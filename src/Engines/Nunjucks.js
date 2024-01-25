@@ -119,11 +119,6 @@ class Nunjucks extends TemplateEngine {
 			if (context.ctx.eleventy) {
 				obj.eleventy = context.ctx.eleventy;
 			}
-
-			// expose nunjucks env
-			if (context.env) {
-				obj.env = context.env;
-			}
 		}
 		return obj;
 	}
